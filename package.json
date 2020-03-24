@@ -11,9 +11,9 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --open",
     "build": "webpack -p --config webpack.config.js",
     "webpack": "webpack --progress",
+    "watch": "webpack -p --config webpack.config.js --watch",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
