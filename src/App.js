@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./App.css";
 
 class reactComponents extends Component {
   state = {
@@ -17,7 +16,7 @@ class reactComponents extends Component {
         <p id="ram" style={this.state.pStyles}>
           Available Memory :
           <span id="aMem" style={this.state.spanStyles}></span>
-          Total Memory :<span id="tMem" style={this.state.spanStyles}></span>
+          Total Memory : <span id="tMem" style={this.state.spanStyles}></span>
         </p>
       </div>
     );
