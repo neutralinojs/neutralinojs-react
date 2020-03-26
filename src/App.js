@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 class reactComponents extends Component {
   state = {
-    aMemVal: "bb",
-    tMemVal: "aa",
+    aMemVal: "",
+    tMemVal: "",
     spanStyles: {
       margin: 10
     },
