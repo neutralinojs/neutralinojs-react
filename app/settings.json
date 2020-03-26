@@ -1,0 +1,10 @@
+{
+  "appname": "myapp",
+  "appport": "0",
+  "mode": "browser",
+  "window": {
+    "width": "1000",
+    "height": "600",
+    "fullscreen": false
+  }
+}
