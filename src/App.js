@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 class reactComponents extends Component {
   state = {
+    aMemVal: "bb",
+    tMemVal: "aa",
     spanStyles: {
       margin: 10
     },
@@ -40,8 +42,13 @@ class reactComponents extends Component {
         {this.state.isbtnRamUsage === 1 ? (
           <p id="ram" style={this.state.pStyles}>
             Available Memory :
-            <span id="aMem" style={this.state.spanStyles}></span>
-            Total Memory : <span id="tMem" style={this.state.spanStyles}></span>
+            <span id="aMem" style={this.state.spanStyles}>
+              {this.state.aMemVal}
+            </span>
+            Total Memory :
+            <span id="tMem" style={this.state.spanStyles}>
+              {this.state.tMemVal}
+            </span>
           </p>
         ) : (
           ""
@@ -52,14 +59,16 @@ class reactComponents extends Component {
   ramUsage() {
     Neutralino.computer.getRamUsage(
       function(data) {
-        document.getElementById("aMem").innerHTML =
+        let aMem =
           (data["ram"]["available"] / (1024 * 1024)).toFixed(3) + " GB";
-        document.getElementById("tMem").innerHTML =
-          (data["ram"]["total"] / (1024 * 1024)).toFixed(3) + " GB";
-      },
+        this.setState({ aMemVal: aMem });
+
+        let tMem = (data["ram"]["total"] / (1024 * 1024)).toFixed(3) + " GB";
+        this.setState({ tMemVal: tMem });
+      }.bind(this),
       function() {
-        document.getElementById("aMem").innerHTML = "Error While Executing";
-      }
+        this.setState({ aMemVal: "Error While Executing" });
+      }.bind(this)
     );
   }
 
