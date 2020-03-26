@@ -40,7 +40,7 @@ class reactComponents extends Component {
           }}
         />
         {this.state.isbtnRamUsage === 1 ? (
-          <p id="ram" style={this.state.pStyles}>
+          <p id="ram">
             Available Memory :
             <span id="aMem" style={this.state.spanStyles}>
               {this.state.aMemVal}
