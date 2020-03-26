@@ -11,11 +11,10 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
-    "build": "webpack -p --config webpack.config.js",
+    "start": "webpack -p --config=configs/webpack.dev.js --watch",
+    "build": "webpack -p --config=configs/webpack.prod.js",
     "webpack": "webpack --progress",
-    "watch": "webpack -p --config webpack.config.js --watch",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,9 +37,14 @@
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.2",
     "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "terser-webpack-plugin": "^2.3.5",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
   }
 }

@@ -4,7 +4,7 @@
   "mode": "browser",
   "window": {
     "width": "1000",
-    "height": "700",
+    "height": "600",
     "fullscreen": false
   }
 }

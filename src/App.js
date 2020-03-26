@@ -12,7 +12,17 @@ class reactComponents extends Component {
   render() {
     return (
       <div>
-        <input type="button" value="Get Ram Usage" onClick={this.ramUsage} />
+        <h2>
+          {NL_NAME} sachith is running on port {NL_PORT} inside {NL_OS} <br />
+          <br />
+          <span>v {NL_VERSION} </span>
+        </h2>
+        <input
+          type="button"
+          className="btn btn-success m-2"
+          value="Get Ram Usage"
+          onClick={this.ramUsage}
+        />
         <p id="ram" style={this.state.pStyles}>
           Available Memory :
           <span id="aMem" style={this.state.spanStyles}></span>

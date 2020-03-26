@@ -22,35 +22,17 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import "../App.css";
 import "../neu.css";
 import App from "../App";
 import * as serviceWorker from "../serviceWorker";
 
-let myapp = {
-  myfunction: function() {
-    document.getElementById("info").innerHTML =
-      NL_NAME +
-      " is running on port " +
-      NL_PORT +
-      " inside " +
-      NL_OS +
-      "<br/><br/>" +
-      "<span>v" +
-      NL_VERSION +
-      "</span>";
-  }
-};
-
 Neutralino.init({
-  load: function() {
-    myapp.myfunction();
-  },
+  load: function() {},
   pingSuccessCallback: function() {},
   pingFailCallback: function() {}
 });
 
-ReactDOM.render(<App />, document.getElementById("react"));
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
