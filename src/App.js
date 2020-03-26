@@ -7,6 +7,19 @@ class reactComponents extends Component {
     },
     pStyles: {
       visibility: "hidden"
+    },
+    btnRamUsage: {
+      color: " #fff",
+      backgroundColor: "#28a745",
+      borderColor: "#28a745",
+      borderRadius: "0.25rem",
+      fontWeight: 400,
+      textAlign: "center",
+      border: "1px solid transparent",
+      padding: ".375rem .75rem",
+      fontSize: " 1rem",
+      lineHeight: "1.5",
+      cursor: "pointer"
     }
   };
   render() {
@@ -19,7 +32,7 @@ class reactComponents extends Component {
         </h2>
         <input
           type="button"
-          className="btn btn-success m-2"
+          style={this.state.btnRamUsage}
           value="Get Ram Usage"
           onClick={this.ramUsage}
         />
