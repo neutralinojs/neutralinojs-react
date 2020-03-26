@@ -5,9 +5,7 @@ class reactComponents extends Component {
     spanStyles: {
       margin: 10
     },
-    pStyles: {
-      visibility: "hidden"
-    },
+    isbtnRamUsage: 0,
     btnRamUsage: {
       color: " #fff",
       backgroundColor: "#28a745",
@@ -34,13 +32,20 @@ class reactComponents extends Component {
           type="button"
           style={this.state.btnRamUsage}
           value="Get Ram Usage"
-          onClick={this.ramUsage}
+          onClick={() => {
+            this.ramUsage();
+            this.isRamBtnClicked();
+          }}
         />
-        <p id="ram" style={this.state.pStyles}>
-          Available Memory :
-          <span id="aMem" style={this.state.spanStyles}></span>
-          Total Memory : <span id="tMem" style={this.state.spanStyles}></span>
-        </p>
+        {this.state.isbtnRamUsage === 1 ? (
+          <p id="ram" style={this.state.pStyles}>
+            Available Memory :
+            <span id="aMem" style={this.state.spanStyles}></span>
+            Total Memory : <span id="tMem" style={this.state.spanStyles}></span>
+          </p>
+        ) : (
+          ""
+        )}
       </div>
     );
   }
@@ -56,8 +61,11 @@ class reactComponents extends Component {
         document.getElementById("aMem").innerHTML = "Error While Executing";
       }
     );
-    document.getElementById("ram").style.visibility = "visible";
   }
+
+  isRamBtnClicked = () => {
+    this.setState({ isbtnRamUsage: 1 });
+  };
 }
 
 export default reactComponents;
