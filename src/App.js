@@ -30,6 +30,8 @@ class reactComponents extends Component {
           <br />
           <span>v {NL_VERSION} </span>
         </h3>
+        {/* NeutralinoJs example for get current available and total ram in Gb*
+          remove comment for below line/}
         {/*this.GetMemBtn()*/}
         {this.state.isbtnRamUsage === 1 ? (
           <p id="ram">
