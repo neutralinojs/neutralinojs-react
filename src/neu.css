@@ -24,11 +24,10 @@ SOFTWARE. */
 #neutralinoapp {
   text-align: center;
 }
-#neutralinoapp h1,
-h2 {
+#neutralinoapp h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
   color: #000000;
-  font-weight: 500;
 }
 #neutralinoapp a {
   margin-left: 12px;
