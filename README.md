@@ -10,8 +10,7 @@ Developer should be able to use React starter project via neu-cli. When develope
 
 - [ ] Create simple react app
 - [ ] Download latest release of Neutralinojs and put it inside react app (root)
-- [ ] Create webpack script (`bundle` in package.json) to combine all js files to a one file and all css files to a one file. 
-- [ ] Modify package.json and run `bundle` after react-scripts build
+- [ ] Create webpack script to combine all js files to a one file and all css files to a one file. 
 - [ ] Make sure when react components are changed it will be reflected in Neutralino app
 - [ ] Use default Neutralino template
 - [ ] Fork neu-cli project and test after integration
