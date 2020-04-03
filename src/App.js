@@ -25,20 +25,14 @@ class reactComponents extends Component {
   render() {
     return (
       <div>
-        <h2>
-          {NL_NAME} sachith is running on port {NL_PORT} inside {NL_OS} <br />
+        <h3>
+          {NL_NAME} is running on port {NL_PORT} inside {NL_OS} <br />
           <br />
           <span>v {NL_VERSION} </span>
-        </h2>
-        <input
-          type="button"
-          style={this.state.btnRamUsage}
-          value="Get Ram Usage"
-          onClick={() => {
-            this.ramUsage();
-            this.isRamBtnClicked();
-          }}
-        />
+        </h3>
+        {/* NeutralinoJs example for get current available and total ram in Gb*
+          remove comment for below line/}
+        {/*this.GetMemBtn()*/}
         {this.state.isbtnRamUsage === 1 ? (
           <p id="ram">
             Available Memory :
@@ -56,6 +50,20 @@ class reactComponents extends Component {
       </div>
     );
   }
+  GetMemBtn() {
+    return (
+      <input
+        type="button"
+        style={this.state.btnRamUsage}
+        value="Get Ram Usage"
+        onClick={() => {
+          this.ramUsage();
+          this.isRamBtnClicked();
+        }}
+      />
+    );
+  }
+
   ramUsage() {
     Neutralino.computer.getRamUsage(
       function(data) {
