@@ -31,6 +31,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "app.css"
+      saca test remove this one
     })
   ]
 };
