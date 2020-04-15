@@ -10,6 +10,7 @@ Developer should be able to use React starter project via neu-cli. When develope
 
 #### Roadmap
 
+
 - [x] Create simple react app
 - [x] Download latest release of Neutralinojs and put it inside react app (root)
 - [x] Create webpack script (`bundle` in package.json) to combine all js files to a one file and all css files to a one file.
@@ -19,4 +20,5 @@ Developer should be able to use React starter project via neu-cli. When develope
 - [x] Fork neu-cli project and test after integration
 - [x] Test on multiple platforms (Linux/Windows/macOs)
 - [x] Update Neutralinojs docs and other required locations
+
 - [ ] Write a blog post about your work
