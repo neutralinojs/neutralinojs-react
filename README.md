@@ -1,6 +1,6 @@
 # neutralinojs-react
 
-![](https://github.com/sachith-1/react-for-neu-cli/workflows/React-Neu%20on%20CI/badge.svg
+![](https://github.com/sachith-1/react-for-neu-cli/workflows/React-Neu%20on%20CI/badge.svg)
 
 React starter project for Neutralinojs
 
