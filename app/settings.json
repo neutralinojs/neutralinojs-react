@@ -1,10 +1,10 @@
 {
   "appname": "myapp",
   "appport": "0",
-  "mode": "browser",
+  "mode": "window",
   "window": {
     "width": "1000",
-    "height": "600",
+    "height": "700",
     "fullscreen": false
   }
 }
