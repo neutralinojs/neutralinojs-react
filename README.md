@@ -19,4 +19,4 @@ Developer should be able to use React starter project via neu-cli. When develope
 - [ ] Test on multiple platforms (Linux/Windows/macOs)
 - [ ] Update Neutralinojs docs and other required locations
 - [ ] Write a blog post about your work
-- sachith
+- sachith sa
