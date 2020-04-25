@@ -4,18 +4,24 @@
 
 React starter project for Neutralinojs
 
-#### Requirement
+## Get started
 
-Developer should be able to use React starter project via neu-cli. When developer enter `neu build` compiled files of react app should be exported as `assets/app.js` and `assets/app.css`
+Clone the repo 
 
-#### Roadmap
+```bash
+$ git clone https://github.com/neutralinojs/neutralinojs-react.git
+$ cd neutralinojs-react
+```
 
-- [x] Create simple react app
-- [x] Download latest release of Neutralinojs and put it inside react app (root)
-- [x] Create webpack script to combine all js files to a one file and all css files to a one file.
-- [x] Make sure when react components are changed it will be reflected in Neutralino app
-- [x] Use default Neutralino template
-- [x] Fork neu-cli project and test after integration
-- [x] Test on multiple platforms (Linux/Windows/macOs)
-- [x] Update Neutralinojs docs and other required locations
-- [ ] Write a blog post about your work
+Install dependencies 
+
+```bash
+$ npm i
+```
+
+Bundle source files
+
+```bash
+$ npm run build
+
+or simply use [neu-cli](https://neutralino.js.org/docs/#/tools/cli)
