@@ -23,5 +23,6 @@ Bundle source files
 
 ```bash
 $ npm run build
+```
 
 or simply use [neu-cli](https://neutralino.js.org/docs/#/tools/cli)
