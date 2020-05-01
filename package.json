@@ -14,7 +14,7 @@
     "start": "webpack -p --config=configs/webpack.dev.js --watch",
     "build": "webpack -p --config=configs/webpack.prod.js",
     "webpack": "webpack --progress",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,14 +36,14 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.8.3",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.5.2",
     "mini-css-extract-plugin": "^0.9.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "terser-webpack-plugin": "^2.3.5",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^4.42.0",
+    "webpack": "4.41.5",
     "webpack-cli": "^3.3.11",
     "webpack-merge": "^4.2.2"
   }
