@@ -1,24 +1,23 @@
 import React, { Component } from "react";
-import RamUsageExample from "./RamUsageExample ";
+
+import RamUsageExample from "./Components/RamUsageExample ";
+import NeuDefault from "./Components/NeuDefault";
 
 class reactComponents extends Component {
-  state = {
-    aMemVal: "",
-    tMemVal: "",
-  };
   render() {
     return (
       <div>
-        <h3>
-          {NL_NAME} is running on port {NL_PORT} inside {NL_OS} <br />
-          <br />
-          <span>v {NL_VERSION} </span>
-        </h3>
-        <div id="ramUsage"></div>
-        {}
-        {/* NeutralinoJs example for get current available and total ram in Gb*
+        <h1 data-testid="caption">NeutralinoJs</h1>
+
+        <div id="neuDefault">
+          <NeuDefault />
+        </div>
+
+        <div id="ramUsage">
+          {/* NeutralinoJs example for get current available and total ram in Gb*
         remove comment for below line*/}
-        {/* <RamUsageExample/> */}
+          {/*   <RamUsageExample/>   */}
+        </div>
       </div>
     );
   }

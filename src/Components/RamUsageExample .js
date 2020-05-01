@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 class RamUsageExample extends Component {
   state = {
-    spanStyles: {
-      margin: 10,
-    },
+    aMemVal: "",
+    tMemVal: "",
     isbtnRamUsage: 0,
+  };
+
+  styles = {
     btnRamUsage: {
       color: " #fff",
       backgroundColor: "#28a745",
@@ -18,7 +20,11 @@ class RamUsageExample extends Component {
       lineHeight: "1.5",
       cursor: "pointer",
     },
+    spanStyles: {
+      margin: 10,
+    },
   };
+
   render() {
     return (
       <div>
@@ -26,7 +32,7 @@ class RamUsageExample extends Component {
         {this.state.isbtnRamUsage === 1 ? (
           <p id="ram">
             Available Memory :
-            <span id="aMem" style={this.state.spanStyles}>
+            <span id="aMem" style={this.styles.spanStyles}>
               {this.state.aMemVal}
             </span>
             Total Memory :
@@ -45,7 +51,7 @@ class RamUsageExample extends Component {
     return (
       <input
         type="button"
-        style={this.state.btnRamUsage}
+        style={this.styles.btnRamUsage}
         value="Get Ram Usage"
         onClick={() => {
           this.ramUsage();
