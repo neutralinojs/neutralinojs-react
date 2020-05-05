@@ -12,7 +12,6 @@ class reactComponents extends Component {
         <div id="neuDefault">
           <NeuDefault />
         </div>
-
         <div id="ramUsage">
           {/* NeutralinoJs example for get current available and total ram in Gb*
         remove comment for below line*/}
