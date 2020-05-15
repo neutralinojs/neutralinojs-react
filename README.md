@@ -6,14 +6,20 @@ React starter project for Neutralinojs
 
 ## Get started
 
-Clone the repo 
+Install [neu-cli](https://neutralino.js.org/docs/#/tools/cli)
 
 ```bash
-$ git clone https://github.com/neutralinojs/neutralinojs-react.git
-$ cd neutralinojs-react
+$ npm i -g @neutralinojs/neu
 ```
 
-Install dependencies 
+Create Neutralino app with React template
+
+```bash
+$ neu create myapp --template react
+$ cd myapp
+```
+
+Install dependencies
 
 ```bash
 $ npm i
@@ -24,5 +30,3 @@ Bundle source files
 ```bash
 $ npm run build
 ```
-
-or simply use [neu-cli](https://neutralino.js.org/docs/#/tools/cli)
