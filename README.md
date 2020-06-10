@@ -19,14 +19,10 @@ $ neu create myapp --template react
 $ cd myapp
 ```
 
-Install dependencies
-
-```bash
-$ npm i
-```
-
 Bundle source files
 
 ```bash
-$ npm run build
+$ neu build
 ```
+
+Learn more about neu-cli from [docs](https://neutralino.js.org/docs/#/tools/cli)
