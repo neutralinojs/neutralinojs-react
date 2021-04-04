@@ -1,3 +1,7 @@
+## Notice 🔔
+
+Please use https://github.com/neutralinojs/neutralinojs-minimal instead of this template, if you are trying Neutralinojs v2.
+
 # neutralinojs-react
 
 ![](https://github.com/sachith-1/react-for-neu-cli/workflows/React-Neu%20on%20CI/badge.svg)
